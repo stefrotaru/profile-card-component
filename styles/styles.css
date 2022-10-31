@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    font-size: 18px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    border: 1px solid black;
+
+    /* position: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* --------MAIN--BACKGROUND---------- */
+.container__top {
+    position: absolute;
+    top: -65vh;
+    left: -20vw;
+}
+
+.container__bottom {
+    position: absolute;
+    top: 55vh;
+    left: 50vw;
+}
+/* ---------------------------------- */
+
+.card {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
