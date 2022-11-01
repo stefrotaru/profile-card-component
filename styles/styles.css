@@ -1,14 +1,19 @@
 *,
 *::before,
 *::after {
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
     height: 100vh;
-    width: auto;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    position: relative;
+
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 
     display: flex;
     flex-direction: column;
@@ -16,42 +21,99 @@ body {
     align-items: center;
 }
 
+h1,
+h2 {
+    font-size: 1.1rem;
+    color: hsl(229, 23%, 23%);
+}
 
 .container {
-    border: 1px solid black;
-
-    /* position: flex;
-    justify-content: center;
-    align-items: center; */
+    border-radius: 10px;
 }
 
-/* --------MAIN--BACKGROUND---------- */
-.container__top {
-    position: absolute;
-    top: -65vh;
-    left: -20vw;
-}
-
-.container__bottom {
-    position: absolute;
-    top: 55vh;
-    left: 50vw;
-}
-/* ---------------------------------- */
 
 .card {
+    background-color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+}
 
+.card__bg {
+    
+}
+
+.card__user {
+    display: grid;
+    justify-content: center;
+    margin-top: -3.5rem;
+    
+}
+
+.user__image {
+    content: url(../images/image-victor.jpg);
+    justify-self: center;
+    border: 5px white solid;
+    border-radius: 50%;
+}
+
+.user__name {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+}
+
+.user__age {
+    /* padding-left: .3rem; */
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.user__location {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+hr {
+    height: 1px;
+    background-color: hsl(0, 0%, 59%, 25%);
+    border: none;
+}
+
+.card__bottom {
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-title {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.bottom-text {
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    letter-spacing: .06rem;
+}
+
+.followers {
+    text-align: center;
 }
 
 
+.likes {
+    text-align: center;
+}
 
 
+.photos {
+    text-align: center;
+}
 
 
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
+/* Given footer */
+.attribution { padding-top: 1rem; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
